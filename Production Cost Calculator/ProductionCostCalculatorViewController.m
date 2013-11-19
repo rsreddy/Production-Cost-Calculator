@@ -9,21 +9,30 @@
 #import "ProductionCostCalculatorViewController.h"
 
 @interface ProductionCostCalculatorViewController ()
-
+@property (strong, nonatomic) IBOutlet UITextField *cvtActual;
+@property (strong, nonatomic) IBOutlet UITextField *cvtTarget;
+@property (weak, nonatomic) IBOutlet UILabel *deltaLabel;
+@property (nonatomic) int delta;
 @end
+
 
 @implementation ProductionCostCalculatorViewController
 
-- (void)viewDidLoad
+-(void)setDelta:(int)delta
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    _delta = delta;
+    self.deltaLabel.text = [NSString stringWithFormat:@"Delta: %d", self.delta];
+    NSLog(@"delta = %d", self.delta);
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)calculate:(UIButton *)sender {
+    
+    self.delta++;
 }
+
 
 @end
+
+
+
+
