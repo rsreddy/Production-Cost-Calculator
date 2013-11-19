@@ -112,8 +112,6 @@
 		E32F70D8183BEE390094516B /* Production Cost Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				E32F70E1183BEE390094516B /* ProductionCostCalculatorAppDelegate.h */,
-				E32F70E2183BEE390094516B /* ProductionCostCalculatorAppDelegate.m */,
 				E32F70E4183BEE390094516B /* Main.storyboard */,
 				E32F70E7183BEE390094516B /* ProductionCostCalculatorViewController.h */,
 				E32F70E8183BEE390094516B /* ProductionCostCalculatorViewController.m */,
@@ -126,6 +124,8 @@
 		E32F70D9183BEE390094516B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E32F70E1183BEE390094516B /* ProductionCostCalculatorAppDelegate.h */,
+				E32F70E2183BEE390094516B /* ProductionCostCalculatorAppDelegate.m */,
 				E32F70DA183BEE390094516B /* Production Cost Calculator-Info.plist */,
 				E32F70DB183BEE390094516B /* InfoPlist.strings */,
 				E32F70DE183BEE390094516B /* main.m */,
