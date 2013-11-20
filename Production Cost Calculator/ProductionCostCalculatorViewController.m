@@ -15,7 +15,6 @@
 @property (nonatomic) int delta;
 @end
 
-
 @implementation ProductionCostCalculatorViewController
 
 -(void)setDelta:(int)delta
@@ -24,6 +23,7 @@
     self.deltaLabel.text = [NSString stringWithFormat:@"Delta: %d", self.delta];
     NSLog(@"delta = %d", self.delta);
 }
+
 
 - (IBAction)calculate:(UIButton *)sender {
     
