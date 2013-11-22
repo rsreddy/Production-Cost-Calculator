@@ -9,10 +9,7 @@
 #import "ProductionCostCalculatorViewController.h"
 
 @interface ProductionCostCalculatorViewController ()
-@property (strong, nonatomic) IBOutlet UITextField *cvtActual;
-@property (strong, nonatomic) IBOutlet UITextField *cvtTarget;
-@property (weak, nonatomic) IBOutlet UILabel *deltaLabel;
-@property (nonatomic) int delta;
+
 @end
 
 @implementation ProductionCostCalculatorViewController
@@ -24,13 +21,35 @@
     NSLog(@"delta = %d", self.delta);
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    NSLog(@"You entered %@", self.cvtActual.text);
+    [self.cvtActual resignFirstResponder];
+    return YES;
+}
 
 - (IBAction)calculate:(UIButton *)sender {
+    self.delta ++;
     
-    self.delta++;
+}
+
+-(void)usePreferredKeyboard{
+    
+    self.cvtActual.keyboardType=UIKeyboardTypeDecimalPad;
+    self.cvtTarget.keyboardType=UIKeyboardTypeDecimalPad;
+    
 }
 
 
+-(void)viewDidLoad{
+    [super viewDidLoad];
+    [self usePreferredKeyboard];
+    
+    
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+}
 @end
 
 
