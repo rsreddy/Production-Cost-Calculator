@@ -14,7 +14,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *cvtActual;
 @property (strong, nonatomic) IBOutlet UITextField *cvtTarget;
 @property (strong, nonatomic) IBOutlet UILabel *deltaLabel;
-@property (nonatomic) int delta;
+@property (nonatomic) float delta;
 
 - (IBAction)calculate:(UIButton *)sender;
 

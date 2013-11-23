@@ -80,7 +80,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="calculate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Y7L-WS-AoM"/>
+                                    <action selector="calculate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Jjb-C8-waT"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Actual:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHo-Uo-YlI">
@@ -123,7 +123,7 @@
                     <connections>
                         <outlet property="cvtActual" destination="zBs-vq-eaR" id="8J1-oy-QHh"/>
                         <outlet property="cvtTarget" destination="e6s-uJ-uaH" id="1uh-75-ikB"/>
-                        <outlet property="deltaLabel" destination="aIK-8z-9zD" id="dab-Rp-p2r"/>
+                        <outlet property="deltaLabel" destination="aIK-8z-9zD" id="41V-pd-1La"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

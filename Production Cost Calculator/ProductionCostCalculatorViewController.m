@@ -13,22 +13,26 @@
 @end
 
 @implementation ProductionCostCalculatorViewController
+@synthesize cvtActual;
+@synthesize cvtTarget;
+@synthesize deltaLabel;
 
--(void)setDelta:(int)delta
+-(void)setDelta:(float)delta
 {
     _delta = delta;
-    self.deltaLabel.text = [NSString stringWithFormat:@"Delta: %d", self.delta];
-    NSLog(@"delta = %d", self.delta);
-}
-
-- (BOOL)textFieldShouldReturn:(UITextField *)textField{
-    NSLog(@"You entered %@", self.cvtActual.text);
-    [self.cvtActual resignFirstResponder];
-    return YES;
+    self.deltaLabel.text = [NSString stringWithFormat:@"Delta: %0.2f", self.delta];
+    NSLog(@"delta = %f", self.delta);
 }
 
 - (IBAction)calculate:(UIButton *)sender {
-    self.delta ++;
+    
+    NSString *cvtActualString = [cvtActual text];
+    NSString *cvtTargetString = [cvtTarget text];
+    
+    float cvtActualFloat = [cvtActualString floatValue];
+    float cvtTargetFloat = [cvtTargetString floatValue];
+    
+    self.delta = cvtTargetFloat - cvtActualFloat;
     
 }
 
@@ -36,7 +40,7 @@
     
     self.cvtActual.keyboardType=UIKeyboardTypeDecimalPad;
     self.cvtTarget.keyboardType=UIKeyboardTypeDecimalPad;
-    
+
 }
 
 
