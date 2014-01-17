@@ -15,26 +15,22 @@
 @implementation ProductionCostCalculatorViewController
 @synthesize cvtActual;
 @synthesize cvtTarget;
-@synthesize deltaLabel;
+@synthesize cvtDelta;
 
--(void)setDelta:(float)delta
-{
-    _delta = delta;
-    self.deltaLabel.text = [NSString stringWithFormat:@"Delta: %0.2f", self.delta];
-    NSLog(@"delta = %f", self.delta);
-}
+@synthesize cyclActual;
+@synthesize cyclTarget;
+@synthesize cyclDelta;
 
-- (IBAction)calculate:(UIButton *)sender {
-    
-    NSString *cvtActualString = [cvtActual text];
-    NSString *cvtTargetString = [cvtTarget text];
-    
-    float cvtActualFloat = [cvtActualString floatValue];
-    float cvtTargetFloat = [cvtTargetString floatValue];
-    
-    self.delta = cvtTargetFloat - cvtActualFloat;
-    
-}
+
+
+
+
+
+
+
+
+
+
 
 -(void)usePreferredKeyboard{
     

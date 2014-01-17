@@ -21,6 +21,7 @@
 		E32F70F4183BEE390094516B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E32F70D6183BEE390094516B /* UIKit.framework */; };
 		E32F70FC183BEE390094516B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E32F70FA183BEE390094516B /* InfoPlist.strings */; };
 		E32F70FE183BEE390094516B /* Production_Cost_CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E32F70FD183BEE390094516B /* Production_Cost_CalculatorTests.m */; };
+		E3B0098918889FE40062288B /* CalculateDelta.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B0098818889FE40062288B /* CalculateDelta.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		E32F70F9183BEE390094516B /* Production Cost CalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Production Cost CalculatorTests-Info.plist"; sourceTree = "<group>"; };
 		E32F70FB183BEE390094516B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E32F70FD183BEE390094516B /* Production_Cost_CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Production_Cost_CalculatorTests.m; sourceTree = "<group>"; };
+		E3B0098718889FE40062288B /* CalculateDelta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateDelta.h; sourceTree = "<group>"; };
+		E3B0098818889FE40062288B /* CalculateDelta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculateDelta.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,8 @@
 		E32F70D8183BEE390094516B /* Production Cost Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				E3B0098718889FE40062288B /* CalculateDelta.h */,
+				E3B0098818889FE40062288B /* CalculateDelta.m */,
 				E32F70E4183BEE390094516B /* Main.storyboard */,
 				E32F70E7183BEE390094516B /* ProductionCostCalculatorViewController.h */,
 				E32F70E8183BEE390094516B /* ProductionCostCalculatorViewController.m */,
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3B0098918889FE40062288B /* CalculateDelta.m in Sources */,
 				E32F70E3183BEE390094516B /* ProductionCostCalculatorAppDelegate.m in Sources */,
 				E32F70E9183BEE390094516B /* ProductionCostCalculatorViewController.m in Sources */,
 				E32F70DF183BEE390094516B /* main.m in Sources */,
@@ -461,6 +467,7 @@
 				E32F7103183BEE390094516B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E32F7104183BEE390094516B /* Build configuration list for PBXNativeTarget "Production Cost CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +476,7 @@
 				E32F7106183BEE390094516B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

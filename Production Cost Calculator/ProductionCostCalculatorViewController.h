@@ -13,11 +13,11 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *cvtActual;
 @property (strong, nonatomic) IBOutlet UITextField *cvtTarget;
-@property (strong, nonatomic) IBOutlet UILabel *deltaLabel;
-@property (nonatomic) float delta;
+@property (strong, nonatomic) IBOutlet UILabel *cvtDelta;
 
-- (IBAction)calculate:(UIButton *)sender;
-
+@property (strong, nonatomic) IBOutlet UITextField *cyclActual;
+@property (strong, nonatomic) IBOutlet UITextField *cyclTarget;
+@property (strong, nonatomic) IBOutlet UILabel *cyclDelta;
 
 
 @end
